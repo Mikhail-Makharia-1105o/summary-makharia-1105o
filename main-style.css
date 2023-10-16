@@ -214,6 +214,8 @@ footer {
     display: flex;
     flex-flow: column;
     text-align: right;
+    background-color: var(--color-triad-sub);
+    border-top: var(--color-triad-contrast-main) 5px solid;
 }
 
 .footer-link {
