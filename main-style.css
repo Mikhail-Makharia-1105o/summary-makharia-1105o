@@ -209,3 +209,25 @@ h2 {
     font-family: Montserrat;
     margin-left: 5%;
 }
+
+footer {
+    display: flex;
+    flex-flow: column;
+    text-align: right;
+}
+
+.footer-link {
+    align-self: center;
+    width: 20%;
+    height: 50%;
+    font-size: 2em;
+}
+
+.footer-date {
+    font-size: 0.7em;
+}
+
+.footer-logo {
+    height: 10%;
+    width: 10%;
+}
