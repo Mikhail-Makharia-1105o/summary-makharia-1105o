@@ -18,10 +18,8 @@
         <p class="header-teacher">Шайдаюк Н.К.</p>
     </header>
     <main class="github-main">
-        <input class='button-back'type="button" value="Back" onclick="window.history.back()" />
+        <input class='button-back'type="button" value= "" onclick="window.history.back()"/>
         <h1 class="github-header">Основы Гитхаб: От push -f до мастера пуллов</h1>
-
-        <p class="github-text">GitHub:
 <div class="github-definitions">
             <span>GitHub</span> - это платформа <span>хостинга, хранения и совместной разработки</span>. Здесь разработчики могут хранить свои <span>проекты</span>, работать над ними в коллаборации и отслеживать их историю. <br>
 
@@ -33,12 +31,13 @@
             
             <span>Ветка</span> - это отдельная линия разработки, которая может быть создана для работы над новой версией или фичей, не затрагивая корневой код проекта.<br>
 </div>
+<div class="github-block-container">
 <div class="github-block">          
             <span>1. Как сгенерировать SSH-ключ и добавить к себе на GitHub:</p></span><br>
             
             <span>● Шаги:</span><br>
             
-            1. Откройте терминал и выполните <code>ssh-keygen <span class="attribute">-t</span> id_ed25519<span class="attribute"> C </span>"your_email@example.com"</code> (если система не легаси, то <code>ssh-keygen <span class="attribute">-t</span> rsa <span class="attribute">-b</span> 4096 <span class="attribute">-C</span> "your_email@example.com"</code>)<br>
+            1. Откройте терминал и выполните <code>ssh-keygen <span class="attribute">-t</span> id_ed25519<span class="attribute"> -C </span>"your_email@example.com"</code> (если система не легаси, то <code>ssh-keygen <span class="attribute">-t</span> rsa <span class="attribute">-b</span> 4096 <span class="attribute">-C</span> "your_email@example.com"</code>)<br>
             
             2. Нажмите Enter, чтобы принять стандартное расположение файла.<br>
             
@@ -97,7 +96,7 @@
             
     <span>● Шаги:</span><br>
             
-            1. В терминале выполните <code>code -project-</code>. для открытия текущего каталога в VSCode.<br>
+            1. В терминале выполните <code>code <span>-project-</span></code>. для открытия текущего каталога в VSCode.<br>
 </div>
 <div class="github-block">
         <span>7. Как запустить программу в терминале (через Node.js):</span><br>
@@ -115,9 +114,9 @@
             
             2. Выполните <code>git checkout <span>новая_ветка</span></code>, чтобы переключиться на новую ветку.<br>
             
-            3. Или используйте <code>git checkout <span class="attribute">-b</span> новая_ветка</code>для создания и переключения на новую ветку сразу.<br>
-</div>    
-<div class="github-block">
+            3. Или используйте <code>git checkout <span class="attribute">-b</span><span>  новая_ветка</span></code>для создания и переключения на новую ветку сразу.<br>
+</div> 
+</div>
         <span>Часто задаваемые вопросы:</span><br>
             
     <span>1. В каком случае нужно генерировать новый SSH-ключ:</span><br>
@@ -163,6 +162,7 @@
             ● Используется для обсуждения и рецензии ваших изменений перед их объединением с основным кодом.<br>
             
             ● Позволяет совершать изменения согласованно и избегать конфликтов при слиянии кода.</p>
+</div>
     </main>
     <footer>
         <p class="footer-date">10/10/2023</p>

@@ -41,7 +41,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: var(--color-triad-contrast-sub) 5px solid;
+    border-bottom: var(--color-triad-contrast-sub) 3px solid;
 }
 
 main {
@@ -181,7 +181,7 @@ h2 {
     border-radius: 24px;
     transition: 0.5s;
     box-shadow: 0;
-    height: 1000px;
+    height: 500px;
     width: 30%;
     margin: 10px;
     display: flex;
@@ -214,7 +214,7 @@ footer {
     flex-flow: column;
     text-align: right;
     background-color: var(--color-triad-main);
-    border-top: var(--color-triad-contrast-sub) 5px solid;
+    border-top: var(--color-triad-contrast-sub) 3px solid;
 }
 
 .footer-link {
@@ -238,17 +238,19 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: Montserrat;
 }
 
 .button-back {
     border: 0;
-    width: 10%;
-    height: 2%;
-    margin-top: 2%;
-    margin-left: 2%;
+    width: 100%;
+    height: 20%;
+    font-size: 1em;
+    font-family: Roboto-Mono;
     background: rgb(218, 28, 158);
     background: linear-gradient(90deg, var(--color-triad-main) 0%, var(--color-triad-complimentary) 35%, var(--color-triad-sub) 100%);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .github-text {
@@ -262,7 +264,6 @@ footer {
 
 span {
     font-weight: bold;
-    font-family: Roboto;
 }
 
 code {
@@ -272,24 +273,47 @@ code {
     margin: 0;
     font-family: SF-Mono;
     font-size: 0.85em;
-    color: #DC143C;
+    color: #D0D3D4;
 }
 
 .attribute {
-    color: #FF69B4;
+    color: #1F618D;
 }
 
 .github-definitions {
     margin-bottom: 10px;
-    background-color: var(--color-triad-sub);
     font-family: Montserrat;
+    margin-bottom: 3%;
 }
 
 .github-block {
-    background-color: var(--color-triad-complimentary);
+    width: 45%;
     height: fit-content;
+    background-image: linear-gradient(45deg, var(--color-triad-main), var(--color-triad-main) 33%, var(--color-triad-sub) 33%, var(--color-triad-sub) 66%, var(--color-triad-complimentary) 66%, var(--color-triad-complimentary) 100%);;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    transition: 0.5s;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0;
+}
+
+.github-block:hover {
+    bottom: 10px;
+    right: 10px;
+    box-shadow: 12px 12px 2px 1px var(--color-triad-contrast-sub);
 }
 
 .github-block::first-letter {
-    color: var(--color-triad-contrast-main)
+    color: #1F618D;
+}
+
+.github-block-container {
+    display: flex;
+    flex-flow: column;
+    height: 900px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
